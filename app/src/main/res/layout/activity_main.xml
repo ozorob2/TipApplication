@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.omarz.tipapplication.MainActivity"
+    tools:layout_editor_absoluteY="89dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="328dp"
+        android:layout_height="68dp"
+        android:text="@string/tip_this_much"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteY="739dp"
+        tools:layout_editor_absoluteX="66dp" />
+
+    <EditText
+        android:id="@+id/tipPercentage"
+        style="@style/editTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_percentage"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteY="462dp"
+        tools:layout_editor_absoluteX="193dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="404dp"
+        android:layout_height="33dp"
+        android:text="What % Do You Want To Tip?"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteY="339dp"
+        tools:layout_editor_absoluteX="98dp" />
+
+    <TextView
+        android:id="@+id/totalTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        tools:layout_editor_absoluteY="739dp"
+        tools:layout_editor_absoluteX="482dp" />
+
+    <EditText
+        android:id="@+id/billTotal"
+        style="@style/editTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Bill Total"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="584dp"
+        android:layout_height="0dp"
+        android:text="How Much Did You Pay?"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="-9dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <Button
+        android:id="@+id/tipCalc"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="363dp"
+        android:layout_height="76dp"
+        android:text="Calculate"
+        tools:layout_editor_absoluteY="602dp"
+        tools:layout_editor_absoluteX="119dp" />
+
+</android.support.constraint.ConstraintLayout>

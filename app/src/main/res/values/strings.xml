@@ -2,4 +2,10 @@
     <string name="app_name">Tip Application</string>
     <string name="tip_this_much"><![CDATA[Tip This Much -->]]></string>
     <string name="enter_percentage">Enter Percentage</string>
+    <string name="picture">Picture</string>
+    <string name="how_much_did_you_pay">How Much Did You Pay?</string>
+    <string name="calculate">Calculate</string>
+    <string name="enter_bill_total">Enter Bill Total</string>
+    <string name="_0">0</string>
+    <string name="what_do_you_want_to_tip">What % Do You Want To Tip?</string>
 </resources>

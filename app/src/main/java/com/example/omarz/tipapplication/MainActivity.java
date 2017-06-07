@@ -25,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
         tipCalc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                double totalCost = Double.parseDouble(billTotal.getText().toString());
-                double tipPerc = Double.parseDouble(tipPercentage.getText().toString());
+                Double totalCost = Double.parseDouble(billTotal.getText().toString());
+                Double tipPerc = Double.parseDouble(tipPercentage.getText().toString());
 
-                double tip = (tipPerc / 100) * totalCost;
+                Double tip = (tipPerc / 100) * totalCost;
                 totalTip.setText(Double.toString(tip));
             }
         });

@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText billTotal, tipPercentage;
+    EditText billTotal, tipPercentage, people;
     TextView totalTip;
 
 
@@ -21,14 +21,17 @@ public class MainActivity extends AppCompatActivity {
         Button tipCalc = (Button)findViewById(R.id.tipCalc);
         billTotal = (EditText)findViewById(R.id.billTotal);
         tipPercentage = (EditText)findViewById(R.id.tipPercentage);
+        people = (EditText)findViewById(R.id.people);
         totalTip = (TextView)findViewById(R.id.totalTip);
         tipCalc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Double totalCost = Double.parseDouble(billTotal.getText().toString());
                 Double tipPerc = Double.parseDouble(tipPercentage.getText().toString());
+                int numberOfPeople = Integer.parseInt(people.getText().toString());
 
-                Double tip = (tipPerc / 100) * totalCost;
+                Double tip = ((tipPerc / 100) * totalCost)/numberOfPeople;
+
                 totalTip.setText(Double.toString(tip));
             }
         });

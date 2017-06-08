@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     EditText billTotal, tipPercentage, people;
     TextView totalTip;
 
-
+    //No Way
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

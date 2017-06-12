@@ -12,21 +12,27 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="517dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="28dp"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="41dp"
         android:text="Pay This Much Per Person"
         android:textAlignment="center"
         android:textSize="36sp"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="41dp"
+        app:layout_constraintBottom_toBottomOf="@+id/totalTip"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="117dp"
-        android:layout_marginBottom="110dp"
+        android:layout_marginTop="103dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="105dp"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tipCalc"
-        android:layout_marginRight="28dp" />
+        android:layout_marginLeft="41dp"
+        android:layout_marginRight="41dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.219" />
 
     <EditText
         android:id="@+id/tipPercentage"
@@ -80,10 +86,10 @@
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="27dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:layout_marginTop="39dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="36dp"
         app:layout_constraintLeft_toLeftOf="parent" />
 
     <EditText
@@ -107,54 +113,37 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
         android:text="@string/how_much_did_you_pay"
         android:textAlignment="center"
         android:textSize="36sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="27dp"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/tipCalc"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="0dp"
-        android:layout_height="76dp"
-        android:layout_marginEnd="75dp"
+        android:layout_width="351dp"
+        android:layout_height="81dp"
         android:background="@android:color/black"
         android:text="@string/calculate"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="36sp"
+        tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="75dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="@+id/textView3"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="199dp"
-        app:layout_constraintLeft_toLeftOf="@+id/textView3"
-        android:layout_marginLeft="75dp"
-        android:layout_marginRight="75dp" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/picture"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.035"
-        app:srcCompat="@mipmap/ic_launcher"
-        tools:layout_constraintBottom_creator="1"
+        android:layout_marginTop="110dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
         tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        android:layout_marginBottom="111dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5" />
 
     <TextView
         android:id="@+id/textView4"
@@ -170,14 +159,15 @@
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintVertical_bias="0.406" />
 
     <EditText
         android:id="@+id/people"
         android:layout_width="222dp"
         android:layout_height="52dp"
-        android:layout_marginBottom="59dp"
-        android:layout_marginTop="51dp"
+        android:layout_marginBottom="57dp"
+        android:layout_marginTop="49dp"
         android:ems="10"
         android:inputType="textPostalAddress|number"
         android:textAlignment="center"
@@ -188,6 +178,53 @@
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="59dp"
+        android:layout_height="0dp"
+        app:srcCompat="@android:drawable/arrow_down_float"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="59dp"
+        android:layout_height="0dp"
+        app:srcCompat="@android:drawable/arrow_down_float"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        android:layout_marginEnd="61dp"
+        app:layout_constraintRight_toRightOf="@+id/imageView2"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="61dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="59dp"
+        android:layout_height="35dp"
+        app:srcCompat="@android:drawable/arrow_down_float"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintRight_toRightOf="@+id/textView4"
+        android:layout_marginBottom="125dp"
+        android:layout_marginRight="64dp" />
 
 </android.support.constraint.ConstraintLayout>

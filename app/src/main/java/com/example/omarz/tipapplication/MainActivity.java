@@ -1,5 +1,6 @@
 package com.example.omarz.tipapplication;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.RemoteException;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        getSupportActionBar().setTitle("Tip Calculator");
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorBlack)));
 
         Button tipCalc = (Button)findViewById(R.id.tipCalc);
         billTotal = (EditText)findViewById(R.id.billTotal);

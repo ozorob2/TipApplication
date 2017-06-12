@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/holo_red_dark"
-    android:statusBarColor="@android:color/holo_red_dark"
     tools:context="com.example.omarz.tipapplication.MainActivity"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="89dp">
